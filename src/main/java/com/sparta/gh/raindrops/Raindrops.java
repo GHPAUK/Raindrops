@@ -10,7 +10,11 @@ public class Raindrops {
     }
 
     if ( n % 5 == 0 ) {
+      if ( string.contains( "Pling " ) ) {
+        string = string + "Plang ";
+      } else {
         string = "Plang ";
+      }
     }
 
     if ( n % 7 == 0 ) {
