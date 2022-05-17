@@ -9,6 +9,10 @@ public class Raindrops {
       string = "Pling ";
     }
 
+    if ( n % 5 == 0 ) {
+        string = "Plang ";
+    }
+
     return string;
   }
 }

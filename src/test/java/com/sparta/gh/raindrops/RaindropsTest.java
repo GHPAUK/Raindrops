@@ -27,4 +27,15 @@ class RaindropsTest {
     // Then
     Assertions.assertEquals( expected, result );
   }
+
+  @ParameterizedTest
+  @ValueSource(ints = {5, 10, 20, 25})
+  void returnPlangFactorOfFiveOnly(int test){
+    // Given
+    String expected = "Plang ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
 }
