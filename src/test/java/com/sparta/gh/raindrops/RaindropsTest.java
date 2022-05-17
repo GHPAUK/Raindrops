@@ -17,5 +17,14 @@ class RaindropsTest {
     Assertions.assertEquals( expected, result );
   }
 
-  
+  @ParameterizedTest
+  @ValueSource(ints = {3, 6, 9, 12})
+  void returnPlingFactorOfThreeOnly(int test){
+    // Given
+    String expected = "Pling ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
 }
