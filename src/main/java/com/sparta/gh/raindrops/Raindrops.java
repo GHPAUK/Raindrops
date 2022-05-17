@@ -13,6 +13,10 @@ public class Raindrops {
         string = "Plang ";
     }
 
+    if ( n % 7 == 0 ) {
+        string = "Plong ";
+    }
+
     return string;
   }
 }

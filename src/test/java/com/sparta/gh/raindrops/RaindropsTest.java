@@ -38,4 +38,15 @@ class RaindropsTest {
     // Then
     Assertions.assertEquals( expected, result );
   }
+
+  @ParameterizedTest
+  @ValueSource(ints = {7, 14, 28, 49})
+  void returnPlongFactorOfSevenOnly(int test){
+    // Given
+    String expected = "Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
 }
