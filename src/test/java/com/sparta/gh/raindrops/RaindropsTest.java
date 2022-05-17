@@ -82,4 +82,15 @@ class RaindropsTest {
     Assertions.assertEquals( expected, result );
   }
 
+  @ParameterizedTest
+  @ValueSource(ints = {105, 210, 420, 840})
+  void returnPlingPlangPlongFactorsOfThreeAndFiveAndSeven(int test){
+    // Given
+    String expected = "Pling Plang Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
 }
