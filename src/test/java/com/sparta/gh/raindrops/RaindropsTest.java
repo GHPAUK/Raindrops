@@ -52,9 +52,20 @@ class RaindropsTest {
 
   @ParameterizedTest
   @ValueSource(ints = {15, 30, 45, 60})
-  void returnPlingPlangFactorsOfSThreeAndFive(int test){
+  void returnPlingPlangFactorsOfThreeAndFive(int test){
     // Given
     String expected = "Pling Plang ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {21, 42, 63, 84})
+  void returnPlingPlongFactorsOfSThreeAndSeven(int test){
+    // Given
+    String expected = "Pling Plong ";
     // When
     String result = Raindrops.raindrops( test );
     // Then

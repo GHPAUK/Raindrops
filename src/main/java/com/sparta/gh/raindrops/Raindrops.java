@@ -18,7 +18,11 @@ public class Raindrops {
     }
 
     if ( n % 7 == 0 ) {
+      if ( string.contains( "Pling Plang " ) || string.contains( "Pling " ) || string.contains( "Plang " ) ) {
+        string = string + "Plong ";
+      } else {
         string = "Plong ";
+      }
     }
 
     return string;
