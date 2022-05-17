@@ -93,4 +93,92 @@ class RaindropsTest {
     Assertions.assertEquals( expected, result );
   }
 
+  @ParameterizedTest
+  @ValueSource(ints = {-1, -2, -4, -8})
+  void returnStringRepresentationOfInputsWhenMinusNumbers(int test){
+    // Given
+    String expected = String.valueOf( test );
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-3, -6, -9, -12})
+  void returnPlingMinusInputs(int test){
+    // Given
+    String expected = "Pling ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-5, -10, -20, -25})
+  void returnPlangMinusInputs(int test){
+    // Given
+    String expected = "Plang ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-7, -14, -28, -49})
+  void returnPlongMinusInputs(int test){
+    // Given
+    String expected = "Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-15, -30, -45, -60})
+  void returnPlingPlangMinusInputs(int test){
+    // Given
+    String expected = "Pling Plang ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-21, -42, -63, -84})
+  void returnPlingPlongMinusInputs(int test){
+    // Given
+    String expected = "Pling Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-35, -70, -140, -280})
+  void returnPlangPlongPlongMinusInputs(int test){
+    // Given
+    String expected = "Plang Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
+  @ParameterizedTest
+  @ValueSource(ints = {-105, -210, -420, -840})
+  void returnPlingPlangPlongMinusInputs(int test){
+    // Given
+    String expected = "Pling Plang Plong ";
+    // When
+    String result = Raindrops.raindrops( test );
+    // Then
+    Assertions.assertEquals( expected, result );
+  }
+
 }
