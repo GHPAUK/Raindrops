@@ -21,7 +21,7 @@ class RaindropsTest {
   @ValueSource(ints = {3, 6, 9, 12})
   void returnPlingFactorOfThreeOnly(int test){
     // Given
-    String expected = "Pling ";
+    String expected = "Pling";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -32,7 +32,7 @@ class RaindropsTest {
   @ValueSource(ints = {5, 10, 20, 25})
   void returnPlangFactorOfFiveOnly(int test){
     // Given
-    String expected = "Plang ";
+    String expected = "Plang";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -43,7 +43,7 @@ class RaindropsTest {
   @ValueSource(ints = {7, 14, 28, 49})
   void returnPlongFactorOfSevenOnly(int test){
     // Given
-    String expected = "Plong ";
+    String expected = "Plong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -54,7 +54,7 @@ class RaindropsTest {
   @ValueSource(ints = {15, 30, 45, 60})
   void returnPlingPlangFactorsOfThreeAndFive(int test){
     // Given
-    String expected = "Pling Plang ";
+    String expected = "PlingPlang";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -65,7 +65,7 @@ class RaindropsTest {
   @ValueSource(ints = {21, 42, 63, 84})
   void returnPlingPlongFactorsOfSThreeAndSeven(int test){
     // Given
-    String expected = "Pling Plong ";
+    String expected = "PlingPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -75,7 +75,7 @@ class RaindropsTest {
   @ValueSource(ints = {35, 70, 140, 280})
   void returnPlangPlongFactorsOfFiveAndSeven(int test){
     // Given
-    String expected = "Plang Plong ";
+    String expected = "PlangPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -86,7 +86,7 @@ class RaindropsTest {
   @ValueSource(ints = {105, 210, 420, 840})
   void returnPlingPlangPlongFactorsOfThreeAndFiveAndSeven(int test){
     // Given
-    String expected = "Pling Plang Plong ";
+    String expected = "PlingPlangPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -108,7 +108,7 @@ class RaindropsTest {
   @ValueSource(ints = {-3, -6, -9, -12})
   void returnPlingMinusInputs(int test){
     // Given
-    String expected = "Pling ";
+    String expected = "Pling";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -119,7 +119,7 @@ class RaindropsTest {
   @ValueSource(ints = {-5, -10, -20, -25})
   void returnPlangMinusInputs(int test){
     // Given
-    String expected = "Plang ";
+    String expected = "Plang";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -130,7 +130,7 @@ class RaindropsTest {
   @ValueSource(ints = {-7, -14, -28, -49})
   void returnPlongMinusInputs(int test){
     // Given
-    String expected = "Plong ";
+    String expected = "Plong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -141,7 +141,7 @@ class RaindropsTest {
   @ValueSource(ints = {-15, -30, -45, -60})
   void returnPlingPlangMinusInputs(int test){
     // Given
-    String expected = "Pling Plang ";
+    String expected = "PlingPlang";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -152,7 +152,7 @@ class RaindropsTest {
   @ValueSource(ints = {-21, -42, -63, -84})
   void returnPlingPlongMinusInputs(int test){
     // Given
-    String expected = "Pling Plong ";
+    String expected = "PlingPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -163,7 +163,7 @@ class RaindropsTest {
   @ValueSource(ints = {-35, -70, -140, -280})
   void returnPlangPlongPlongMinusInputs(int test){
     // Given
-    String expected = "Plang Plong ";
+    String expected = "PlangPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then
@@ -174,7 +174,7 @@ class RaindropsTest {
   @ValueSource(ints = {-105, -210, -420, -840})
   void returnPlingPlangPlongMinusInputs(int test){
     // Given
-    String expected = "Pling Plang Plong ";
+    String expected = "PlingPlangPlong";
     // When
     String result = Raindrops.raindrops( test );
     // Then

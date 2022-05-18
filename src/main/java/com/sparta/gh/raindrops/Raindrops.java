@@ -8,26 +8,26 @@ public class Raindrops {
 
     // If 'n' divided by three equals zero then 'n' is a multiple of three and earns the 'Pling' response
     if ( n % 3 == 0 ) {
-      string = "Pling ";
+      string = "Pling";
     }
 
     // If 'n' divided by five equals zero then 'n' is a multiple of five and earns the 'Plang' response
     if ( n % 5 == 0 ) {
       // Checks if 'n' has already earned the previous tag, if so it appends the next tag 'Plang'
-      if ( string.contains( "Pling " ) ) {
-        string = string + "Plang ";
+      if ( string.contains( "Pling" ) ) {
+        string = string + "Plang";
       } else {
-        string = "Plang ";
+        string = "Plang";
       }
     }
 
     // If 'n' divided by seven equals zero then 'n' is a multiple of seven and earns the 'Plong' response
     if ( n % 7 == 0 ) {
       // Checks if 'n' has already earned any of the previous tags, if so it appends the next tag 'Plong'
-      if ( string.contains( "Pling Plang " ) || string.contains( "Pling " ) || string.contains( "Plang " ) ) {
-        string = string + "Plong ";
+      if ( string.contains( "PlingPlang" ) || string.contains( "Pling" ) || string.contains( "Plang" ) ) {
+        string = string + "Plong";
       } else {
-        string = "Plong ";
+        string = "Plong";
       }
     }
 
